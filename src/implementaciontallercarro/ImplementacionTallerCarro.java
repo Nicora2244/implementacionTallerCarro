@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 /**
  *
  * @author nicolas.ramirez_ara
+ * @daniel.santana codigo 2160550
  */
 public class ImplementacionTallerCarro extends Application {
 

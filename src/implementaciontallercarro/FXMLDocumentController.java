@@ -20,6 +20,7 @@ import modelo.Cola;
 /**
  *
  * @author nicolas.ramirez_ara
+ * @daniel.santana codigo 2160550
  */
 public class FXMLDocumentController implements Initializable {
     
@@ -39,9 +40,10 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void encolarClientes(ActionEvent event) {
-         String tiempoEsperaC = tiempoTotalTXT();
-         colaClientes.encolar(new Clientes(nombreD,modeloC,tiempoEsperaC));
-       
+         int nombreP = Integer.parseInt(tiempoTotalTXT.getText());
+        
+
+        colaClientes.encolar(new Clientes (nombreD, modeloC, tiempoExperaC));
     }
     @FXML
     private void terminar(ActionEvent event) {
