@@ -38,14 +38,22 @@ public class FXMLDocumentController implements Initializable {
     Cola<Clientes> colaClientes;
     
     @FXML
-    private void iniciarClientes(ActionEvent event) {
-         int tiempoEsperaC = tiempoTotalTXT();
+    private void encolarClientes(ActionEvent event) {
+         String tiempoEsperaC = tiempoTotalTXT();
+         colaClientes.encolar(new Clientes(nombreD,modeloC,tiempoEsperaC));
        
     }
-    
+    @FXML
+    private void terminar(ActionEvent event) {
+//        System.out.println("You clicked me!");
+//        label.setText("Hello World!");
+
+       
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        colaClientes = new Cola<>();
     }    
     
 }
