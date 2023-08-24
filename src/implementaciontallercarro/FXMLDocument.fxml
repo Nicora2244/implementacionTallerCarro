@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.web.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="implementaciontallercarro.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="746.0" prefWidth="1029.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="implementaciontallercarro.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <MenuBar layoutX="8.0" layoutY="7.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="72.0" layoutY="89.0" mnemonicParsing="false" text="Iniciar" />
+      <Button layoutX="138.0" layoutY="89.0" mnemonicParsing="false" text="Terminar" />
+      <Label layoutX="540.0" layoutY="50.0" prefHeight="21.0" prefWidth="100.0" text="Tiempo total" />
+      <TextField layoutX="661.0" layoutY="45.0" />
+      <WebView layoutX="39.0" layoutY="131.0" prefHeight="200.0" prefWidth="917.0" />
+      <Label layoutX="76.0" layoutY="358.0" prefHeight="21.0" prefWidth="100.0" text="Edad" />
+      <Label layoutX="418.0" layoutY="358.0" prefHeight="21.0" prefWidth="143.0" text="Tiempo transcurrido" />
+      <Label layoutX="712.0" layoutY="411.0" prefHeight="21.0" prefWidth="100.0" text="Reporte" />
+      <TextArea layoutX="20.0" layoutY="385.0" prefHeight="341.0" prefWidth="601.0" />
+      <TextArea layoutX="712.0" layoutY="432.0" prefHeight="269.0" prefWidth="297.0" />
     </children>
 </AnchorPane>
