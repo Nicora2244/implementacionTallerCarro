@@ -21,6 +21,18 @@ public class ImplementacionTallerCarro extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        Parent root = FMXLLoader.load(getClass().getResource("/vista/FXMLDocument.fxml"));
+        
+        Scene scene = new Scene (root);
+        
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main
+
+
+    
         // Crear un WebView
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
@@ -58,12 +70,11 @@ public class ImplementacionTallerCarro extends Application {
         // Crear una escena con el WebView
         StackPane root = new StackPane();
         root.getChildren().add(webView);
-        Scene scene = new Scene(root, 800, 600);
+        
 
         // Configurar la ventana principal
         stage.setTitle("Tabla HTML en JavaFX");
-        stage.setScene(scene);
-        stage.show();
+        
     }
 
     public static void main(String[] args) {
