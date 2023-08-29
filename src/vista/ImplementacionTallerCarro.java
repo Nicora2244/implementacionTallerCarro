@@ -6,6 +6,7 @@
 package vista;
 
 import javafx.application.Application;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.scene.web.WebEngine;
@@ -15,7 +16,7 @@ import javafx.stage.Stage;
 /**
  *
  * @author nicolas.ramirez_ara
- * @daniel.santana codigo 2160550
+ * @author daniel.santana codigo 2160550
  */
 public class ImplementacionTallerCarro extends Application {
 
