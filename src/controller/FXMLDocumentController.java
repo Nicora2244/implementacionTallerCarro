@@ -40,23 +40,37 @@ public class FXMLDocumentController implements Initializable {
     Cola<Clientes> colaClientes;
     
     @FXML
+    private WebView webview; //Permite tener un contenedor HTML
+    
+    WebEngine webEngine; //Permite agregar contenido al webview
+    
+    @FXML
     private void encolarClientes(ActionEvent event) {
-         int nombreP = Integer.parseInt(tiempoTotalTXT.getText());
-        
+        int tiempoEsperaC = Integer.parseInt(tiempoTotalTXT.getText());
+     
 
-        colaClientes.encolar(new Clientes (nombreD, modeloC, tiempoExperaC));
+        colaClientes.encolar(new Cliente (nombreD, modeloC, tiempoExperaC));
     }
     @FXML
-    private void terminar(ActionEvent event) {
+    private void mostrarClientes(ActionEvent event) {
 //        System.out.println("You clicked me!");
 //        label.setText("Hello World!");
-
+        mostrarTAxT.setText(colaClientes.toString());
+       
+    }
+    @FXML
+    private void mostrarClientesHTML(ActionEvent event) {
+//        System.out.println("You clicked me!");
+//        label.setText("Hello World!");
+       String html = Tools.convertirColaAHtml(colaClientes);
+       webEngine.loadContent(html);
        
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         colaClientes = new Cola<>();
+        webEngine = webview1.getEngine(); //Aqui es en donde va a salir todo lo que se haga.
     }    
     
 }
