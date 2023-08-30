@@ -20,7 +20,8 @@ import modelo.Cola;
 /**
  *
  * @author nicolas.ramirez_ara
- * @daniel.santana codigo 2160550
+ * @author daniel.santana codigo 2160550
+ * @author nelson.duque codigo 2215922
  */
 public class FXMLDocumentController implements Initializable {
     
